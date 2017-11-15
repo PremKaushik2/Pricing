@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: com.sapient.pricing.impl.PricingComponentTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.571 sec <<< FAILURE!
+com.sapient.pricing.impl.PricingComponentTest.testConsistancyInMultiThreadedEnv()  Time elapsed: 0.01 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.sapient.pricing.impl.PricingComponentTest.testConsistancyInMultiThreadedEnv(PricingComponentTest.java:149)
+
+com.sapient.pricing.impl.PricingComponentTest.testSetAndGetPartPrice()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.sapient.pricing.impl.PricingComponentTest.testSetAndGetPartPrice(PricingComponentTest.java:58)
+
+com.sapient.pricing.impl.PricingComponentTest.testUpdatePartPrice()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.sapient.pricing.impl.PricingComponentTest.testUpdatePartPrice(PricingComponentTest.java:76)
+
+com.sapient.pricing.impl.PricingComponentTest.testMultiThreadedEnv()  Time elapsed: 0.548 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.sapient.pricing.impl.PricingComponentTest.testMultiThreadedEnv(PricingComponentTest.java:116)
+Caused by: java.lang.ClassNotFoundException: org.junit.Assert
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 19 more
+
+com.sapient.pricing.impl.PricingComponentTest.testBoundaryOfMap()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.sapient.pricing.impl.PricingComponentTest.testBoundaryOfMap(PricingComponentTest.java:162)
+
